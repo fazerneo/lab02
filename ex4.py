@@ -1,14 +1,12 @@
 ''' I used the same while loop with the try-except block as from exercise 3. I recorded the speed and
-gave a special note for it to be only the digits instead of something like 60 kmph. I thought it 
+gave a special note for only the digits instead of 60 mph. I thought it 
 could be possible to use such an input too but upon research found that it would be too much of a headache.'''
-
-# Please remember to break the loop. Haha
 while True:
     try:
-        # so we record the speed in a variable speed as an integer. We give a special note to only use digits
+        # so we record the speed in a variable speed as an integer. We give a special note only to use digits
         speed = int(input("enter the recorded speed (Note: just enter the digits(example: 60 instead of 60 kmph)): "))
 
-        # Then we use an if-elif-else to check whether the person is speeding, not speeding or if the speed is negative, then it is invalid.
+        # Then we use nested if-else to check whether the person is speeding or not speeding, or if the speed is negative, then it is invalid.
         if speed > 60:
             print("Speeding")
             # Then we use a nested if-elif-else to give warning or fines.        
